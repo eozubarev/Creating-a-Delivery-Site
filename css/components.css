@@ -1,0 +1,116 @@
+/* Btn start */
+
+.btn {
+  background: #ff5441;
+  color: #fff;
+  display: inline-block; /* Чтобы padding применился */
+  padding: 18px 20px;
+  width: 240px;
+  max-width: 100%;
+  border-radius: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.02em;
+  box-shadow: 0px 0px 38px 0px rgba(212, 66, 50, 0.8);
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #d84333;
+}
+
+.btn:active {
+  opacity: 0.8;
+  transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 16px 20px;
+    width: 220px;
+    font-size: 16px;
+  }
+}
+
+/* Container */
+
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Phone */
+
+.phone__item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block; /* Чтобы задать ему padding */
+  border: 3px solid #fff;
+  border-radius: 21.5px;
+  padding: 8px 16px;
+  transition: all 0.2s;
+}
+
+.phone__item:hover {
+  color: #1f1f1f;
+  background: #fff;
+}
+
+.phone__item:active {
+  opacity: 0.8;
+}
+
+/* Btn-menu */
+
+.btn-menu {
+  background: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px;
+  border: 0;
+  margin-right: -15px;
+}
+
+.btn-menu__box {
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.btn-menu__inner::before,
+.btn-menu__inner::after,
+.btn-menu__inner {
+  background: #fff;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn-menu__inner {
+  position: relative;
+  display: block;
+  top: 50%;
+}
+
+.btn-menu__inner::before,
+.btn-menu__inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.btn-menu__inner::before {
+  top: -10px;
+}
+.btn-menu__inner::after {
+  bottom: -10px;
+}
