@@ -61,7 +61,7 @@
 
 .header-page__text {
   position: relative;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 .header-page__link:hover .header-page__text {

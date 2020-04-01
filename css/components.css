@@ -1,9 +1,8 @@
-/* Btn start */
-
+/* btn start */
 .btn {
   background: #ff5441;
   color: #fff;
-  display: inline-block; /* Чтобы padding применился */
+  display: inline-block;
   padding: 18px 20px;
   width: 240px;
   max-width: 100%;
@@ -16,45 +15,46 @@
   text-align: center;
   letter-spacing: 0.02em;
   box-shadow: 0px 0px 38px 0px rgba(212, 66, 50, 0.8);
-  transition: color 0.2s, background 0.2s, opacity 0.2s; /* Прописываем transition для каждого св-ва (кол,бэк,опас.) вместо all, дабы не анимировать пэддинги */
+  transition: color 0.2s, background 0.2s, opacity 0.2s;
 }
 
 .btn:hover {
-  background: #d84333;
+  background: #ec4b38;
 }
 
 .btn:active {
   opacity: 0.8;
-  transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+  transform: scale(0.95);
 }
 
 @media (max-width: 576px) {
   .btn {
+    font-size: 16px;
     padding: 16px 20px;
     width: 220px;
-    font-size: 16px;
   }
 }
+/* btn end */
 
-/* Container */
-
+/* container start */
 .container {
   padding: 0 20px;
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
-/* Phone */
+/* container end */
 
+/* phone start */
 .phone__item {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   color: #fff;
   text-decoration: none;
-  display: inline-block; /* Чтобы задать ему padding */
+  display: inline-block;
   border: 3px solid #fff;
-  border-radius: 21.5px;
   padding: 8px 16px;
+  border-radius: 21.5px;
   transition: color 0.2s, background 0.2s, opacity 0.2s;
 }
 
@@ -66,9 +66,9 @@
 .phone__item:active {
   opacity: 0.8;
 }
+/* phone end */
 
-/* Btn-menu */
-
+/* btn-menu start */
 .btn-menu {
   background: none;
   border-radius: 0;
@@ -76,7 +76,6 @@
   display: inline-block;
   padding: 15px;
   border: 0;
-  margin-right: -15px;
 }
 
 .btn-menu__box {
@@ -89,15 +88,15 @@
 .btn-menu__inner::after,
 .btn-menu__inner {
   background: #fff;
-  height: 4px;
   width: 100%;
+  height: 4px;
   border-radius: 5px;
 }
 
 .btn-menu__inner {
-  position: relative;
   display: block;
   top: 50%;
+  position: relative;
 }
 
 .btn-menu__inner::before,
@@ -110,20 +109,15 @@
 .btn-menu__inner::before {
   top: -10px;
 }
+
 .btn-menu__inner::after {
   bottom: -10px;
 }
+/* btn-menu end */
 
-/* Section */
-
+/* section start */
 .section {
   padding: 110px 0;
-}
-
-@media (max-width: 576px) {
-  .section {
-    padding: 90px 0;
-  }
 }
 
 .section__title {
@@ -138,101 +132,25 @@
   color: #ffa650;
 }
 
-@media (max-width: 576px) {
-  .section__title {
-    font-size: 36px;
-  }
-}
-
 .section__header {
   margin-bottom: 90px;
 }
 
-/* Catalog nav */
-
-.catalog-nav {
-  display: flex;
-  justify-content: center;
-}
-
-.catalog-nav__wrapper {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 23px;
-  overflow: hidden; /* Чтобы у кнопки был радиус, даже если поверх накладываем bg */
-}
-
-.catalog-nav__btn {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  padding: 14px;
-  min-width: 150px;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  color: #e6e6e6;
-  border-right: 1px solid #e5e5e5;
-  transition: border 0.2s, background 0.2s, color 0.2s;
-}
-
-.catalog-nav__btn.is-active {
-  background: #1f1f1f;
-  color: #fff;
-  border-color: #1f1f1f;
-}
-
-.catalog-nav__btn:not(.is-active):hover {
-  /* not(.is-active) позволяет эффекту hover не менять цвет активного элемента */
-  background: #ffa650;
-  color: #fff;
-  border-right-color: #ffa650;
-}
-
-.catalog-nav__item:last-of-type .catalog-nav__btn {
-  /* border right 0 для последнего элемента */
-  border-right: 0;
-}
-
-@media (max-width: 767px) {
-  .catalov-nav {
-    width: 500px;
-    max-width: 100%;
-    margin: 0 auto;
+@media (max-width: 576px) {
+  .section {
+    padding: 90px 0;
   }
 
-  .catalog-nav__wrapper {
-    flex-wrap: wrap;
-    width: 100%;
-    border-radius: 10px;
+  .section__title {
+    font-size: 36px;
   }
 
-  .catalog-nav__item {
-    width: 50%;
-    flex-grow: 1;
-  }
-
-  .catalog-nav__btn {
-    min-width: 0;
-    width: 100%;
-    border-top: 1px solid #e5e5e5;
-  }
-  .catalog-nav__item:nth-of-type(1) .catalog-nav__btn,
-  .catalog-nav__item:nth-of-type(2) .catalog-nav__btn {
-    /* Стили применяеются для класса catalog-nav__item для 1-го и 2-го элемента */
-    border-top: 0;
-  }
-  .catalog-nav__item:nth-of-type(even) .catalog-nav__btn {
-    /* even означат чётные */
-    border-right: 0;
+  .section__header {
+    margin-bottom: 70px;
   }
 }
+
+/* section end */
 
 /* catalog-nav start */
 .catalog-nav {
@@ -499,3 +417,58 @@
   }
 }
 /* product end */
+
+/* socials start */
+.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 7px;
+}
+
+.socials__link {
+  display: inline-block;
+}
+
+.socials__icon {
+  fill: #ffa650;
+  width: 35px;
+  height: 35px;
+  transition: fill 0.2s, opacity 0.2s;
+}
+
+.socials__icon--vk:hover {
+  fill: #5078a5;
+}
+
+.socials__icon--fb:hover {
+  fill: #3e58a1;
+}
+
+.socials__icon--inst:hover {
+  fill: #e6369c;
+}
+
+.socials__icon:active {
+  opacity: 0.7;
+}
+
+.socials__logo {
+  fill: #fff;
+}
+
+@media (max-width: 767px) {
+  .socials__item {
+    margin-right: 15px;
+  }
+
+  .socials__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+/* socials end */
