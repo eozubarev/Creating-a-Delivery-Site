@@ -5,3 +5,5 @@ Stack technologies specified in description.
 
 ### GitHub Page ↓↓↓
  See [PizzaTimes](https://eozubarev.github.io/pizzaTimes).
+
+Technology stack: HTML, CSS, NODE.JS, JS, GIT. =>
