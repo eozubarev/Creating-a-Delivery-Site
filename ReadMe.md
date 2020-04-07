@@ -1,9 +1,14 @@
 ### Hello. My name is Evgeny Zubarev i am junior Frontend Developer. 
 
-This is project Pizza delivery (name pizzaTimes).
-Stack technologies specified in description.
+This is my project Pizza delivery (name of pizzaTimes).
 
-### GitHub Page ↓↓↓
- See [PizzaTimes](https://eozubarev.github.io/pizzaTimes).
+![Image alt](https://github.com/eozubarev/pizzaTimes/raw/master/img/about/Desktop.jpg)
+![Image alt](https://github.com/eozubarev/pizzaTimes/raw/master/img/about/Mobile.jpg)
 
-Technology stack: HTML, CSS, NODE.JS, JS, GIT. =>
+
+### See [PizzaTimes](https://eozubarev.github.io/pizzaTimes).
+
+Technology stack: HTML, CSS, JS, BEM, Node.js, BrowserSync, FileZilla, Git, VS Code, Adobe photoshop.
+
+
+
