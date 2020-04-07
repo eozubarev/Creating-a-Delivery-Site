@@ -16,7 +16,6 @@
  1. Node.js
  1. BrowserSync, FileZilla, Git, VS Code, Adobe photoshop
 
-Technology stack: HTML, CSS, JS, BEM, Node.js, BrowserSync, FileZilla, Git, VS Code, Adobe photoshop.
 
 
 
