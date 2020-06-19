@@ -11,9 +11,8 @@
  1. HTML
  1. CSS
  1. JS
- 1. BEM
- 1. Node.js
- 1. BrowserSync, Git, VS Code, Adobe photoshop
+ 1. BEM - naming
+ 1. BrowserSync, Git, VS Code, Adobe photoshop.
 
 
 
