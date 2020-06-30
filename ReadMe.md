@@ -3,8 +3,8 @@
 #### This is my first project Pizza delivery (name of [pizzaTimes](https://eozubarev.github.io/Creating-a-Delivery-Site)).
 
 
-![Image alt](https://github.com/eozubarev/pizzaTimes/raw/master/img/about/Desktop.jpg)
-![Image alt](https://github.com/eozubarev/pizzaTimes/raw/master/img/about/Mobile.jpg)
+![Image alt](https://d.radikal.ru/d05/2006/6e/dd213be59587.jpg)
+![Image alt](https://a.radikal.ru/a03/2006/50/6e13d89e0fb4.jpg)
 
 
 * Technology stack:
